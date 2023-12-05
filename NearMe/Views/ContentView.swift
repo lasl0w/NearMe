@@ -74,17 +74,8 @@ struct ContentView: View {
             .sheet(isPresented: .constant(true), content: {
                 VStack {
                     // Apply Detents & mods to the VStack, not the sheet itself
-                    TextField("Search", text: $query)
-                        .textFieldStyle(.roundedBorder)
-                    // could add more padding or style more...
-                        .padding()
-                        .onSubmit {
-                            // code fired when you click return in the text field
-                            isSearching = true
-                        }
-                    List(mapItems, id: \.self) { mapItem in
-                        PlaceView(mapItem: mapItem)
-                    }
+                    SearchBarView(search: $query, isSearching: $isSearching)
+                    PlaceListView(mapItems: mapItems)
                     
                     
                     // add a spacer to push the TextField to the top, no matter the presentationDetents is
