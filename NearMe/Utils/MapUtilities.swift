@@ -7,8 +7,39 @@
 
 import Foundation
 import MapKit
-// Create it as a "stateless function"
 
+
+func calculateDirections(from: MKMapItem, to: MKMapItem) async -> MKRoute {
+    
+    let directionsRequest = MKDirections.Request()
+    directionsRequest.transportType = .automobile
+    directionsRequest.source = from
+    directionsRequest.destination = to
+    
+    let directions = MKDirections(request: directionsRequest)
+    // it's an async function.  must use await
+    let response = try? await directions.calculate()
+    
+    if response == nil {
+        print("directions response is nil")
+    }
+    
+    return response?.routes.first ?? MKRoute()
+}
+
+
+func calculateDistance(from: CLLocation, to: CLLocation) -> Measurement<UnitLength> {
+    // benefit of the Measurement API is that you get the distance based on the locale.  might be in yards vs meters, miles vs kilometers depending on where you are in the world
+    
+    // TODO:  Draw out CLLocation and all it's children.  a picture with boxes
+    // 'from' is the user's location.  'to' is the mark on the map.  just use the distance function (returns meters by default)
+    let distanceInMeters = from.distance(from: to)
+    print("Distance in Meters: \(distanceInMeters)")
+    return Measurement(value: distanceInMeters, unit: .meters)
+}
+
+
+// Create it as a "stateless function"
 // need a search term and we want to pass in the visible region
 // async and can throw
 func performSearch(searchTerm: String, visibleRegion: MKCoordinateRegion?) async throws -> [MKMapItem] {

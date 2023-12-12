@@ -19,6 +19,8 @@
 		F1CFEBF62B1C0702007A70F5 /* SearchOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CFEBF52B1C0702007A70F5 /* SearchOptionsView.swift */; };
 		F1CFEBF82B1EEB8B007A70F5 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CFEBF72B1EEB8B007A70F5 /* SearchBarView.swift */; };
 		F1CFEBFA2B1FE1E5007A70F5 /* PlaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CFEBF92B1FE1E5007A70F5 /* PlaceListView.swift */; };
+		F1CFEBFC2B203F3D007A70F5 /* MeasurementFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CFEBFB2B203F3D007A70F5 /* MeasurementFormatter+Extension.swift */; };
+		F1CFEBFE2B241098007A70F5 /* SelectedPlaceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CFEBFD2B241098007A70F5 /* SelectedPlaceDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		F1CFEBF52B1C0702007A70F5 /* SearchOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchOptionsView.swift; sourceTree = "<group>"; };
 		F1CFEBF72B1EEB8B007A70F5 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		F1CFEBF92B1FE1E5007A70F5 /* PlaceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListView.swift; sourceTree = "<group>"; };
+		F1CFEBFB2B203F3D007A70F5 /* MeasurementFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeasurementFormatter+Extension.swift"; sourceTree = "<group>"; };
+		F1CFEBFD2B241098007A70F5 /* SelectedPlaceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPlaceDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				F1CFEBEB2B1AFB9F007A70F5 /* MKCoordinateRegion+Extensions.swift */,
+				F1CFEBFB2B203F3D007A70F5 /* MeasurementFormatter+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 				F1CFEBF52B1C0702007A70F5 /* SearchOptionsView.swift */,
 				F1CFEBF72B1EEB8B007A70F5 /* SearchBarView.swift */,
 				F1CFEBF92B1FE1E5007A70F5 /* PlaceListView.swift */,
+				F1CFEBFD2B241098007A70F5 /* SelectedPlaceDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -196,6 +202,8 @@
 				F1CFEBF22B1BF39B007A70F5 /* PlaceView.swift in Sources */,
 				F1CFEBF82B1EEB8B007A70F5 /* SearchBarView.swift in Sources */,
 				F1CFEBFA2B1FE1E5007A70F5 /* PlaceListView.swift in Sources */,
+				F1CFEBFC2B203F3D007A70F5 /* MeasurementFormatter+Extension.swift in Sources */,
+				F1CFEBFE2B241098007A70F5 /* SelectedPlaceDetailView.swift in Sources */,
 				F1CFEBDC2B168D8E007A70F5 /* ContentView.swift in Sources */,
 				F1CFEBEC2B1AFB9F007A70F5 /* MKCoordinateRegion+Extensions.swift in Sources */,
 				F1CFEBDA2B168D8E007A70F5 /* NearMeApp.swift in Sources */,
