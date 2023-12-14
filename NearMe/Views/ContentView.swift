@@ -130,6 +130,12 @@ struct ContentView: View {
                         SelectedPlaceDetailView(mapItem: $selectedMapItem)
                             .padding()
                         if selectedDetent == .medium || selectedDetent == .large {
+                            if let selectedMapItem {
+                                // must make sure its safe to unwrap
+                                ActionButtons(mapItem: selectedMapItem)
+                                    .padding()
+                            }
+                            
                             // i.e. - we don't want to see it when the sheet is just 1/5th of the view
                             LookAroundPreview(initialScene: lookAroundScene)
                             // TODO:  learn how to make the LookAround have a max height in the sheet

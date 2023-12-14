@@ -8,6 +8,14 @@
 import Foundation
 import MapKit
 
+func openAppleMaps(destination: MKMapItem) {
+    
+    // easy peezy - open it and let apple maps route the directions
+    MKMapItem.openMaps(with: [destination])
+    
+    // ... don't even need the helper function.  may as well just call directly.
+    
+}
 
 func calculateDirections(from: MKMapItem, to: MKMapItem) async -> MKRoute {
     

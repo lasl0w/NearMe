@@ -21,6 +21,7 @@
 		F1CFEBFA2B1FE1E5007A70F5 /* PlaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CFEBF92B1FE1E5007A70F5 /* PlaceListView.swift */; };
 		F1CFEBFC2B203F3D007A70F5 /* MeasurementFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CFEBFB2B203F3D007A70F5 /* MeasurementFormatter+Extension.swift */; };
 		F1CFEBFE2B241098007A70F5 /* SelectedPlaceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CFEBFD2B241098007A70F5 /* SelectedPlaceDetailView.swift */; };
+		F1CFEC002B2919E2007A70F5 /* ActionButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CFEBFF2B2919E2007A70F5 /* ActionButtons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		F1CFEBF92B1FE1E5007A70F5 /* PlaceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListView.swift; sourceTree = "<group>"; };
 		F1CFEBFB2B203F3D007A70F5 /* MeasurementFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeasurementFormatter+Extension.swift"; sourceTree = "<group>"; };
 		F1CFEBFD2B241098007A70F5 /* SelectedPlaceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPlaceDetailView.swift; sourceTree = "<group>"; };
+		F1CFEBFF2B2919E2007A70F5 /* ActionButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				F1CFEBF72B1EEB8B007A70F5 /* SearchBarView.swift */,
 				F1CFEBF92B1FE1E5007A70F5 /* PlaceListView.swift */,
 				F1CFEBFD2B241098007A70F5 /* SelectedPlaceDetailView.swift */,
+				F1CFEBFF2B2919E2007A70F5 /* ActionButtons.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				F1CFEBDA2B168D8E007A70F5 /* NearMeApp.swift in Sources */,
 				F1CFEBF42B1C017C007A70F5 /* PreviewData.swift in Sources */,
 				F1CFEBEF2B1B0430007A70F5 /* MapUtilities.swift in Sources */,
+				F1CFEC002B2919E2007A70F5 /* ActionButtons.swift in Sources */,
 				F1CFEBE92B1848FC007A70F5 /* LocationManager.swift in Sources */,
 				F1CFEBF62B1C0702007A70F5 /* SearchOptionsView.swift in Sources */,
 			);
